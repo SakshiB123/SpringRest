@@ -14,18 +14,9 @@ import com.spring.restapi.service.RestapiService;
 @RestController
 public class RestapiController {
 	
-	//@Autowired
-	//private RestapiService restapi;
-	
-	@PostMapping("/method")
+	@GetMapping("/method")
 	public String getName(String name)
 	{
 		return name.toUpperCase();
 	}
-	
-	//@GetMapping("/users")
-	//public String getSakshi()
-	//{
-		//return "Sakshi";
-	//}
 }
